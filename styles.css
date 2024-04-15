@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;  /* Thêm thanh cuộn ngang khi bảng vượt quá kích thước màn hình */
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+    position: sticky;  /* Cố định hàng tiêu đề */
+    top: 0;  /* Đặt hàng tiêu đề ở đầu bảng */
+    z-index: 1;  /* Đảm bảo hàng tiêu đề luôn hiển thị trên cùng */
+}
+
+tbody th {
+    position: static;  /* Huỷ cố định hàng tiêu đề trong tbody */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Chỉnh độ rộng của các cột */
+table {
+    width: 100%;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+    width: 15%;  /* Độ rộng cột Thể loại */
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 65%;  /* Độ rộng cột Tên */
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    width: 20%;  /* Độ rộng cột Thao tác */
+}

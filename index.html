@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách chia sẻ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h2>Danh sách chia sẻ</h2>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Thể loại</th>
+            <th>Tên Phim/Ebook</th>
+            <th>Link</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Ebook</td>
+            <td>Hướng dẫn Photoshop cơ bản</td>
+            <td>
+                <button onclick="downloadFile('link_ebook_photoshop.pdf')">Download</button>
+                <button onclick="watchOnline('link_ebook_photoshop.html')">Xem online</button>
+            </td>
+        </tr>
+        <!-- 
+        <tr>
+            <td>Ebook</td>
+            <td>Hướng dẫn Photoshop cơ bản</td>
+            <td>
+                <button onclick="downloadFile('link_ebook_photoshop.pdf')">Download</button>
+                <button onclick="watchOnline('link_ebook_photoshop.html')">Xem online</button>
+            </td>
+        </tr>
+        ... -->
+    </tbody>
+</table>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>

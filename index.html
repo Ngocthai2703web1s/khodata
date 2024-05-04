@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danh sách chia sẻ</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danh sách chia sẻ</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<h2>MY LIST</h2>
+<h2>Danh sách chia sẻ</h2>
+
+<div class="image-grid"></div>
 
 <table border="1">
     <thead>
@@ -20,6 +22,23 @@
     </thead>
     <tbody>
         <tr>
+            <td>Phim Bộ TVB</td>
+            <td>Nghịch Thiên Kỳ Án 1 - Sinister Beings 1</td>
+            <td>
+                <button onclick="downloadFile('link_ebook_photoshop.pdf')">Download</button>
+                <button onclick="watchOnline('link_ebook_photoshop.html')">Xem online</button>
+            </td>
+        </tr>
+		<tr>
+            <td>Phim Bộ TVB</td>
+            <td>Nghịch Thiên Kỳ Án 2 - Sinister Beings 2</td>
+            <td>
+                <button onclick="downloadFile('link_ebook_photoshop.pdf')">Download</button>
+                <button onclick="watchOnline('link_ebook_photoshop.html')">Xem online</button>
+            </td>
+        </tr>
+		<!-- 
+		<tr>
             <td>Ebook</td>
             <td>Hướng dẫn Photoshop cơ bản</td>
             <td>
@@ -27,18 +46,10 @@
                 <button onclick="watchOnline('link_ebook_photoshop.html')">Xem online</button>
             </td>
         </tr>
-        <!-- 
-        <tr>
-            <td>Ebook</td>
-            <td>Hướng dẫn Photoshop cơ bản</td>
-            <td>
-                <button onclick="downloadFile('link_ebook_photoshop.pdf')">Download</button>
-                <button onclick="watchOnline('link_ebook_photoshop.html')">Xem online</button>
-            </td>
-        </tr>
-        ... -->
+		-->
     </tbody>
 </table>
+
 
 <script src="scripts.js"></script>
 

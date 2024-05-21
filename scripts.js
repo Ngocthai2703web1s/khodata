@@ -1,6 +1,6 @@
 // Function to download a file
 function downloadFile(link) {
-    window.location.href = link;
+    window.open(link, '_blank');
 }
 
 // Function to open a link in a new tab

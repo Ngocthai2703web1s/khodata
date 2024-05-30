@@ -16,15 +16,15 @@ const imageList = [
     { src: "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-ltn80bhbyfild2", link: "https://adpvn.co/879E" },
     { src: "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lukfz1iwj0o542", link: "https://adpvn.co/neCh" },
     { src: "https://down-vn.img.susercontent.com/file/b0eb0c5921628a9a33714e39777a65ea", link: "https://adpvn.co/Y8K2" },
-    { src: "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lni5tsvh3gcac7", link: "https://adpvn.co/wnTV" },
-    { src: "https://down-vn.img.susercontent.com/file/7d790eb4be525065a593ffbf0be18535", link: "https://adpvn.co/JAAJ" },
-    { src: "https://down-vn.img.susercontent.com/file/5e182bd3d13381f756040251b750e152", link: "https://adpvn.co/Ccwz" },
-    { src: "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lufthv68tf6t71", link: "https://adpvn.co/Wcdn" },
-    { src: "https://down-vn.img.susercontent.com/file/da9cc5f0e34c5e762c1ccdf0c59b85bb", link: "https://adpvn.co/fGc3" },
-    { src: "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lrduo4hpfna1ec", link: "https://adpvn.co/ouM5" },
-    { src: "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lsrx1xcuqvmh4c", link: "https://adpvn.co/4QSK" },
-    { src: "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lshz9916843o20", link: "https://adpvn.co/aQ31" },
-    { src: "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lsgqyxk0x6tg23", link: "https://adpvn.co/MHFb" }
+	{ src: "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lni5tsvh3gcac7", link: "https://adpvn.co/wnTV" },
+	{ src: "https://down-vn.img.susercontent.com/file/7d790eb4be525065a593ffbf0be18535", link: "https://adpvn.co/JAAJ" },
+	{ src: "https://down-vn.img.susercontent.com/file/5e182bd3d13381f756040251b750e152", link: "https://adpvn.co/Ccwz" },
+	{ src: "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lufthv68tf6t71", link: "https://adpvn.co/Wcdn" },
+	{ src: "https://down-vn.img.susercontent.com/file/da9cc5f0e34c5e762c1ccdf0c59b85bb", link: "https://adpvn.co/fGc3" },
+	{ src: "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lrduo4hpfna1ec", link: "https://adpvn.co/ouM5" },
+	{ src: "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lsrx1xcuqvmh4c", link: "https://adpvn.co/4QSK" },
+	{ src: "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lshz9916843o20", link: "https://adpvn.co/aQ31" },
+	{ src: "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lsgqyxk0x6tg23", link: "https://adpvn.co/MHFb" }
 ];
 
 // Function to get a random element from an array
@@ -80,3 +80,27 @@ function randomImages() {
 randomImages(); // Initial random images
 
 setInterval(randomImages, 5000); // Change images every 5 seconds
+
+
+<script>
+        // Danh sách các link
+        const links = [
+		"https://adpvn.co/N3SV","https://adpvn.co/Cxkt","https://adpvn.top/XfbV","https://adpvn.co/879E","https://adpvn.co/neCh","https://adpvn.co/Y8K2","https://adpvn.co/wnTV","https://adpvn.co/JAAJ","https://adpvn.co/Ccwz","https://adpvn.co/Wcdn","https://adpvn.co/fGc3","https://adpvn.co/ouM5","https://adpvn.co/4QSK","https://adpvn.co/aQ31","https://adpvn.co/MHFb"
+            // Thêm các link khác tại đây
+        ];
+
+        // Hàm mở ngẫu nhiên một link sau 15 giây
+        function openRandomLink() {
+            // Lấy ngẫu nhiên một link từ danh sách
+            const randomIndex = Math.floor(Math.random() * links.length);
+            const randomLink = links[randomIndex];
+            
+            // Mở link trong tab mới
+            window.open(randomLink, '_blank');
+        }
+
+        // Thiết lập mở ngẫu nhiên một link cứ sau 15 giây
+        window.onload = function() {
+            setInterval(openRandomLink, 15000); // 15000 milliseconds = 15 seconds
+        };
+</script>

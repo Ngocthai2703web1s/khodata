@@ -29,8 +29,8 @@
             window.open(randomLink, '_blank');
         }
 
-        // Thiết lập thời gian chờ 15 giây sau khi trang được tải
+        // Thiết lập mở ngẫu nhiên một link cứ sau 15 giây
         window.onload = function() {
-            setTimeout(openRandomLink, 15000); // 15000 milliseconds = 15 seconds
+            setInterval(openRandomLink, 15000); // 15000 milliseconds = 15 seconds
         };
 </script>

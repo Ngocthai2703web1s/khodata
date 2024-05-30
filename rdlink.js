@@ -1,21 +1,7 @@
 <script>
         // Danh sách các link
         const links = [
-            "https://adpvn.co/N3SV",
-			"https://adpvn.co/Cxkt",
-			"https://adpvn.top/XfbV",
-			"https://adpvn.co/879E",
-			"https://adpvn.co/neCh",
-			"https://adpvn.co/Y8K2",
-			"https://adpvn.co/wnTV",
-			"https://adpvn.co/JAAJ",
-			"https://adpvn.co/Ccwz",
-			"https://adpvn.co/Wcdn",
-			"https://adpvn.co/fGc3",
-			"https://adpvn.co/ouM5",
-			"https://adpvn.co/4QSK",
-			"https://adpvn.co/aQ31",
-			"https://adpvn.co/MHFb"
+		"https://adpvn.co/N3SV","https://adpvn.co/Cxkt","https://adpvn.top/XfbV","https://adpvn.co/879E","https://adpvn.co/neCh","https://adpvn.co/Y8K2","https://adpvn.co/wnTV","https://adpvn.co/JAAJ","https://adpvn.co/Ccwz","https://adpvn.co/Wcdn","https://adpvn.co/fGc3","https://adpvn.co/ouM5","https://adpvn.co/4QSK","https://adpvn.co/aQ31","https://adpvn.co/MHFb"
             // Thêm các link khác tại đây
         ];
 
